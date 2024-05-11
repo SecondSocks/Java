@@ -6,6 +6,8 @@ public class main {
     
     static Scanner scan = new Scanner(System.in);
     static formuls formul = new formuls();
+    static listSorting sorted = new listSorting();
+    static refactorString refactor = new refactorString();
 
     public static void main(String[] args) {
 
