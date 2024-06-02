@@ -79,5 +79,11 @@ public class ArrayListLearn {
 
         // toString()
         System.out.println(list.toString());
+
+        // toArray()
+        Object[] array = list.toArray();
+        for (Object object : array) {
+            System.out.println(object);
+        }
     }
 }
