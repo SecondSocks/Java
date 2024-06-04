@@ -1,4 +1,4 @@
-package CollectionLearn.ListCollections;
+package CollectionLearn.QueueCollections;
 
 import java.util.Deque;
 import java.util.NoSuchElementException;

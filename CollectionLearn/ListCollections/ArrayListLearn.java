@@ -1,7 +1,11 @@
+/*(Не синхронизирован) ArrayList (содержит в себе массив) используется там, где очень часто нужно получать элемент,
+добавлять или удалять большое кол-во в середине или конце листа (Скорость = О(1). Формула: byte + x * byte(type))
+* Он работает очень быстро, чаще всего стоит использовать его*/
 package CollectionLearn.ListCollections;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Arrays;
 
 public class ArrayListLearn {
     public static void main(String[] args) {
@@ -14,7 +18,8 @@ public class ArrayListLearn {
         }
         ArrayList<Integer> list3 = new ArrayList<>(list2);  // list2 был скопирован в list3
 
-        test(list);
+        //test(list);
+        methods4();
     }
 
     private static void test(ArrayList<String> list) {
@@ -85,5 +90,70 @@ public class ArrayListLearn {
         for (Object object : array) {
             System.out.println(object);
         }
+    }
+
+    private static void methods() {
+        StringBuilder sb1 = new StringBuilder("A");
+        StringBuilder sb2 = new StringBuilder("B");
+        StringBuilder sb3 = new StringBuilder("C");
+        StringBuilder sb4 = new StringBuilder("D");
+        StringBuilder[] arraySB = {sb1, sb2, sb3, sb4};
+
+        List<StringBuilder> list = Arrays.asList(arraySB);
+        System.out.println(list);  // [A, B, C, D]
+
+        sb1.append(" Update");
+        System.out.println(list); // [A Update, B, C, D]
+    }
+
+    private static void methods1() {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("A"); list.add("B"); list.add("C");
+
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("C"); list1.add("D");
+
+        list.removeAll(list1);
+        System.out.println(list);
+    }
+
+    private static void methods2() {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("A"); list.add("B"); list.add("C");
+
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("C"); list1.add("D");
+
+        System.out.println(list.containsAll(list1));
+
+        list.retainAll(list1);
+        System.out.println(list);
+    }
+
+    private static void methods3() {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("A"); list.add("B"); list.add("C");
+
+        ArrayList<String> list1 = new ArrayList<>();
+        list1.add("C"); list1.add("D");
+
+        list.addAll(list1);
+        List<String> sub = list.subList(0, 2);
+
+        Object[] array = list.toArray();
+        for (Object obj : array) {
+            System.out.printf("%s ", obj);
+        }
+    }
+
+    private static void methods4() {
+        List<Integer> list = List.of(3, 90, 50, 10);
+        System.out.println(list);
+
+        ArrayList<String> list2 = new ArrayList<>();
+        list2.add("A"); list2.add("B"); list2.add("C");
+
+        List<String> list1 = List.copyOf(list2);
+        System.out.println(list1);
     }
 }
