@@ -22,7 +22,7 @@ class Humn {
     private int age;
     private static int countPeople;
 
-    private static  String description = "Этот класс является описанием человека";
+    private static String description = "Этот класс является описанием человека";
 
     public Humn(String name, int age) {
         this.name = name;
