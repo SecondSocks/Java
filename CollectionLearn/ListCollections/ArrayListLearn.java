@@ -83,7 +83,7 @@ public class ArrayListLearn {
         System.out.println(list.contains("Red"));
 
         // toString()
-        System.out.println(list.toString());
+        System.out.println(list);
 
         // toArray()
         Object[] array = list.toArray();

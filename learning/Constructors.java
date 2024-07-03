@@ -10,8 +10,8 @@ public class Constructors {
 
 class Human { // Этот класс подстраивается под каждую ситуацию
 
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     /* Блок конструкторов */
     public Human() {
@@ -36,8 +36,8 @@ class Human { // Этот класс подстраивается под каж�
 
 class AngryHuman { // В этом классе обязательно вводить все параметры
 
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     public AngryHuman(String name, int age) {
         this.name = name;

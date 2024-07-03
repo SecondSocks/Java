@@ -15,14 +15,14 @@ public class main {
 
         switch(numberOfFormul) {
             case (1):
-                formul.pifagor_g();
+                formuls.pifagor_g();
                 break;
 
             case (2):
-                formul.pifagor_k();
+                formuls.pifagor_k();
                 break;
-            };
-        }
+            }
+    }
 
     private static int choose() {
 

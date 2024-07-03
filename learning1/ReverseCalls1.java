@@ -3,10 +3,10 @@ package learning1;
 public class ReverseCalls1 {
     public static void main(String[] args) {
         Buttons tvButton = new Buttons(new EventHandler() {
-            private boolean on = false;
+            private final boolean on = false;
             public void execute() {
                 if (on) {
-                    System.out.println("");
+                    System.out.println();
                 }
             }
         });

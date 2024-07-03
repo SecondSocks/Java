@@ -7,7 +7,7 @@ public class Arrays {
         System.out.println(); // sout -> Enter
         int number = 5; // Примитивный тип данных
         String s = "Привет"; // Ссылочный тип данных (Класс s = Объект)
-        String s1 = new String("Привет"); // s/s1 - это ссылки на объект "Привет"
+        String s1 = "Привет"; // s/s1 - это ссылки на объект "Привет"
         // s == s1
 
         int[] arraysOfNumbers = new int[5]; // 5 - это размер массива  // Ссылочный тип данных

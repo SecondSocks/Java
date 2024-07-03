@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Salary {
 	
-	private static Scanner scan = new Scanner(System.in);
+	private static final Scanner scan = new Scanner(System.in);
 	
 	public static void main(String[] args){
 		

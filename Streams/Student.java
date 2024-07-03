@@ -1,9 +1,11 @@
 package Streams;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Student implements Comparable<Student> {
-    private final String name;
+    private String name;
     private final int course;
     private final int age;
     private final double avgGrade;
@@ -19,6 +21,26 @@ public class Student implements Comparable<Student> {
     public int getCourse() { return course; }
     public int getAge() { return age; }
     public double getAvgGrade() { return avgGrade; }
+
+    public void setName(String name) { this.name = name; }
+
+    public static List<Student> getStudentsList() {
+        List<Student> list = new ArrayList<>();
+
+        Student student = new Student("Larry", 20, 2, 3.89);
+        Student student1 = new Student("Garry", 20, 2, 4.2);
+        Student student2 = new Student("Marry", 22, 4, 4.61);
+        Student student3 = new Student("Arthur", 19, 1, 3.33);
+        Student student4 = new Student("Josh", 21, 3, 2.89);
+
+        list.add(student);
+        list.add(student1);
+        list.add(student2);
+        list.add(student3);
+        list.add(student4);
+
+        return list;
+    }
 
     @Override
     public String toString() {

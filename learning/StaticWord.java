@@ -7,7 +7,7 @@ public class StaticWord {
         Humn.getDescription(); // Работает без создания объекта класса Human
         Humn bob = new Humn("bob", 18);
 
-        bob.getDescription(); // Это не является ошибкой, но и не является правильным подходом
+        Humn.getDescription(); // Это не является ошибкой, но и не является правильным подходом
         // Статические объекты - это объекты класса, поэтмоу их нужно вызывать через название класса
         bob.printNumberOfPeople();
 
@@ -22,7 +22,7 @@ class Humn {
     private int age;
     private static int countPeople;
 
-    private static String description = "Этот класс является описанием человека";
+    private static final String description = "Этот класс является описанием человека";
 
     public Humn(String name, int age) {
         this.name = name;

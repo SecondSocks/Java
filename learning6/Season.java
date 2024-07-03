@@ -4,7 +4,7 @@ public enum Season {
     SUMMER(24), WINTER(-15), SPRING(0), AUTUMN(5);  // Это объекты
     // Object -> Enum -> Season
 
-    private int temperature;
+    private final int temperature;
 
     Season(int temperature) {
         this.temperature = temperature;

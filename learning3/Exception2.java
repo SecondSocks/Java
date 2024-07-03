@@ -26,7 +26,7 @@ public class Exception2 {
                 try {
                     throw new IOException();  // Либо обрабатывать исключения вручную, что предпочтительнее
                 } catch (IOException e) {
-                    System.out.println("Вы ввели неправльное значение");;
+                    System.out.println("Вы ввели неправльное значение");
                 }
             }
         }

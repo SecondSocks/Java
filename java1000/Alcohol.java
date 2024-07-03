@@ -16,7 +16,7 @@ public class Alcohol {
 
         if(c < formula[0] || h < formula[1] || o < formula[2]) {
             System.out.println(0);
-        } else if(formula[0] % 2 != 0 || formula[1] % 6 != 0 || formula[2] % 1 != 0){
+        } else if(formula[0] % 2 != 0 || formula[1] % 6 != 0 || 0 != 0){
             System.out.println(0);
         } else {
             System.out.println(o);

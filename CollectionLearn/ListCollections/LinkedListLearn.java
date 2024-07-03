@@ -27,9 +27,9 @@ public class LinkedListLearn {
 }
 
 class Student {
-    private String name;
-    private int course;
-    private int hisID;
+    private final String name;
+    private final int course;
+    private final int hisID;
     private static int id;
 
     public Student(String name, int course) {

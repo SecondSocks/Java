@@ -2,7 +2,7 @@ package learning1.Wildcards;
 
 public class Dog extends Animal{
 
-    private String name;
+    private final String name;
 
     public Dog(String name) {
         this.name = name;

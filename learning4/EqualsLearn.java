@@ -11,7 +11,7 @@ public class EqualsLearn {
 }
 
 class Animals {
-    private int id;
+    private final int id;
 
     public Animals(int id) {
         this.id = id;

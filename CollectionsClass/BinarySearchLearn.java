@@ -67,13 +67,13 @@ public class BinarySearchLearn {
         for (int i = 0; i < 11; i++) {
             list.add(Math.toIntExact(Math.round(Math.random() * 100)));
         }
-        System.out.printf("Лист до: %s\n", list.toString());
+        System.out.printf("Лист до: %s\n", list);
 
         Collections.reverse(list);
-        System.out.printf("Перевернутый лист: %s\n", list.toString());
+        System.out.printf("Перевернутый лист: %s\n", list);
 
         Collections.shuffle(list);
-        System.out.printf("Перемешанный лист: %s\n", list.toString());
+        System.out.printf("Перемешанный лист: %s\n", list);
     }
 }
 

@@ -46,7 +46,7 @@ public class EnumLearning {
         Season season = Season.WINTER;
         System.out.println(season.getTemperature());
         System.out.printf("\n%s\n", season.name());  // Получение имени перечисления
-        Animal cat = animal.valueOf("CAT");
+        Animal cat = Animal.valueOf("CAT");
         System.out.println(cat.getTranslation());
         System.out.printf("Индекс WINTER: %s", season.ordinal());
     }

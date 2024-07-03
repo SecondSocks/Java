@@ -15,7 +15,7 @@ public class Exception3 {
             }
             scanner.close();
         } catch (FileNotFoundException e) {
-            System.out.println("File not found");;
+            System.out.println("File not found");
         }
 
         // Unchecked Exception (Runtime exception) - ошибка в работе программы

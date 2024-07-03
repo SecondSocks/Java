@@ -4,9 +4,7 @@ public class LearnStringBuffer {
 
     public static void main(String[] args) {
 
-        StringBuffer string = new StringBuffer("We add: ");
-        string.append(1).append(" ").append(false).append(" ").append(3.14);
-        System.out.println(string);
+        System.out.println("We add: " + 1 + " " + false + " " + 3.14);
 
         // Удаление подстроки
         StringBuffer str = new StringBuffer("Simple String");

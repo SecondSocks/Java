@@ -1,7 +1,7 @@
 package learning4;
 
 public class Electrocar {
-    private int id;
+    private final int id;
 
     // Нестатический вложенный класс
     private class Engine {

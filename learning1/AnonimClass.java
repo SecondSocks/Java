@@ -15,5 +15,5 @@ public class AnonimClass {
 }
 
 interface AbleToEat {
-    public void eat();
+    void eat();
 }

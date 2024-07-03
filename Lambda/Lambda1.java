@@ -62,15 +62,15 @@ public class Lambda1 {
         StudentChecks sc = (Student s) -> { return s.getAvgGrade() > 4.0; };
         lambda.testStudents(students, sc);
 
-        System.out.printf("Студенты до сортировки: %s\n", students.toString());
+        System.out.printf("Студенты до сортировки: %s\n", students);
         Collections.sort(students, (stud1, stud2) -> stud1.getCourse()-stud2.getCourse());
-        System.out.printf("Студенты после сортировки: %s\n", students.toString());
+        System.out.printf("Студенты после сортировки: %s\n", students);
     }
 
     private void printStudentOverGrade(ArrayList<Student> students, double grade) {
         for (Student student : students) {
             if (student.getAvgGrade() > grade) {
-                System.out.println(student.toString());
+                System.out.println(student);
             }
         }
     }
@@ -78,7 +78,7 @@ public class Lambda1 {
     private void printStudentUnderAge(ArrayList<Student> students, int age) {
         for (Student student : students) {
             if (student.getAge() > age) {
-                System.out.println(student.toString());
+                System.out.println(student);
             }
         }
     }
@@ -86,7 +86,7 @@ public class Lambda1 {
     private void printStudentMixCondition(ArrayList<Student> students, int age, double grade, char sex) {
         for (Student student : students) {
             if (student.getAge() > age && student.getAvgGrade() < grade && student.getSex() == sex) {
-                System.out.println(student.toString());
+                System.out.println(student);
             }
         }
     }

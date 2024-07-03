@@ -10,8 +10,6 @@ public class Game {
         System.out.print("Введите число: ");
         int firstNumber = scan.nextInt();
         int lastNumber = 9 - firstNumber;
-        StringBuilder number = new StringBuilder();
-        number.append(firstNumber).append("9").append(lastNumber);
-        System.out.println(number);
+        System.out.println(firstNumber + "9" + lastNumber);
     }
 }

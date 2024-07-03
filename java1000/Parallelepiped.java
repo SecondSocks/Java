@@ -10,7 +10,7 @@ public class Parallelepiped {
         System.out.print("Введите длину: ");
         int a = scan.nextInt();
         System.out.print("Введите ширину: ");
-        int b = scan.nextInt();;
+        int b = scan.nextInt();
         System.out.print("Введите высоту: ");
         int c = scan.nextInt();
 

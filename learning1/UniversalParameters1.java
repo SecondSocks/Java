@@ -13,8 +13,8 @@ public class UniversalParameters1 {
 
         String[] peoples = {"Bobby", "Garry", "Franklin", "John"};
         Integer[] datas = {50, 10, 20, 30, 450};
-        printer.<String>printArray(peoples);
-        printer.<Integer>printArray(datas);
+        printer.printArray(peoples);
+        printer.printArray(datas);
     }
 }
 

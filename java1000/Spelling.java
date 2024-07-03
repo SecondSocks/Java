@@ -8,7 +8,7 @@ public class Spelling {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Введите номер символа, который нужно удалить: ");
-        int numOfChar = scan.nextInt();;
+        int numOfChar = scan.nextInt();
 
         System.out.print("Введите строку: ");
         String str = scan.next();

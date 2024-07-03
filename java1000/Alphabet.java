@@ -1,5 +1,6 @@
 package java1000;
 
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -38,9 +39,7 @@ public class Alphabet {
         ArrayList<String> alphabet = new ArrayList<>();
         String[] alphabets = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
                 "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
-        for (String s : alphabets) {
-            alphabet.add(s);
-        }
+        Collections.addAll(alphabet, alphabets);
         return alphabet;
     }
 }

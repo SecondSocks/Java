@@ -1,5 +1,5 @@
 package learning.Interfaces;
 
 public interface Info {
-	public void showInfo(); // Сигнатура интерфейса
+	void showInfo(); // Сигнатура интерфейса
 }

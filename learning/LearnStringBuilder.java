@@ -20,14 +20,12 @@ public class LearnStringBuilder {
     private void anotherStringFormat() {
 
         StringBuilder strBuilder = new StringBuilder("Hello"); // В скобочках ставится начальное значение строки
-        System.out.println(strBuilder.toString()); // Hello
+        System.out.println(strBuilder); // Hello
         strBuilder.append(" world!"); /* Та же самая конкантенация,
          только новые объекты не создаются? из-за чего программа тратит меньше времени */ 
-        System.out.println(strBuilder.toString());
+        System.out.println(strBuilder);
 
-        StringBuilder newString = new StringBuilder();
-        newString.append("This is").append(" chain-").append("method");
-        System.out.println(newString);
+        System.out.println("This is" + " chain-" + "method");
 
         /* Все методы как и у StringBuffer */
         /* Используется при работе со строками, которые часто будут модифицироваться, в однопоточной среде */

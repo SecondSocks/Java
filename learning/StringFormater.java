@@ -5,7 +5,7 @@ public class StringFormater {
     public static void main(String[] args) {
         
         // Форматирование
-        System.out.printf("This is string: %s"); 
+        System.out.print("This is string: %s");
         /* s - string
          * d - digit
          * 10d - digit: width 10 symbols before number "This is string: ______3790"

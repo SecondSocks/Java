@@ -1,5 +1,6 @@
 package java1000;
 
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -48,9 +49,7 @@ public class Numbers {
     private static ArrayList<String> getArray(String number) {
         String[] array = number.split("");
         ArrayList<String> list = new ArrayList<>();
-        for (String elem : array) {
-            list.add(elem);
-        }
+        Collections.addAll(list, array);
         return list;
     }
 }
